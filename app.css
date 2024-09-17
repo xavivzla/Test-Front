@@ -26,6 +26,12 @@ body {
   font-size: 20px;
   border-radius: 10px;
   padding: 20px 40px;
+  cursor: pointer;
+  transition: background-color 0.3s linear;
+}
+
+.container .action:hover {
+  background-color: #005400;
 }
 
 .rows {
