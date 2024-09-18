@@ -8,14 +8,44 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="title">Lorem Title</h1>
-      <button class="action">Action</button>
+      <h1 class="title" id="title">Lorem Title</h1>
+      <button class="action" id="action">Change Title and add box</button>
 
       <div class="rows">
         <div class="item"></div>
         <div class="item"></div>
         <div class="item"></div>
       </div>
+
+      <div id="box-container"></div>
+
+      <form class="form" id="form">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="name" />
+          <small id="name-error"></small>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="email" />
+          <small id="email-error"></small>
+        </div>
+
+        <input type="submit" value="Submit" id="submit" />
+      </form>
+
+      <div class="clicks" id="counter">Clicks: 0</div>
+
+      <div class="array">
+        <small>
+          Separate numbers with commas and press the button to sort and sum
+        </small>
+        <input type="text" id="numbers" value="3,4,5,6,2,20" />
+        <button id="array-action">Sort and sum</button>
+
+        <div id="array-result"></div>
+      </div>
     </div>
+    <script src="./app.js"></script>
   </body>
 </html>
